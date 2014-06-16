@@ -1,0 +1,1 @@
+find . -name '*.sh' | xargs wc -l > line_count.txt

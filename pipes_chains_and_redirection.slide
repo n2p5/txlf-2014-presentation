@@ -1,0 +1,169 @@
+Pipes, Chains, and Redirection
+Texas Linux Fest 2014
+1:30 14 Jun 2014
+Tags: bash
+
+Nathan Toups
+rojoroboto
+n@rjrbt.io
+@rojoroboto
+
+* This session isn't about... 
+
+* this type of chain
+.image images/road_rash.png
+
+* or this type of chain
+.image images/chain_uprising.png
+
+* or this these types of pipes
+.image images/pipe_art.png
+
+* or redirection through sleight of hand
+.image images/trick_redirection.png
+
+* about this session
+- an introduction to pipelining and Unix Philosophy
+- exploration the history of pipelining in unix-like operating systems
+
+* about this session
+- practical examples in the command line
+- pipes, chains, and redirection in the command line like this:
+.code code/example-01.sh
+- all examples built for Bourne Shell (bash)
+- all examples are self contained
+- all examples are focused on flow more than command features
+
+* about this session
+- this is an introduction to this topic, not an obfuscated code competition
+.code code/obfuscated_example.pl
+- nor is it a session about advanced uses of awk, sed, find, xargs, etc
+
+* unix pipeline
+.image images/pipeline-example.png
+
+* unix redirection
+.image images/redirection.png
+
+* the unix pipeline
+- feed one program into another with pipes
+- example from wikipedia: 
+.code code/example-02.sh
+- and with actual shell commands:
+.code code/example-03.sh
+
+* A little history lesson in pipes
+- concept of piping and vertical bar notation invented by Douglas McIlroy
+- added to UNIX in 1973 by Ken Thompson
+- wide range of influence, ported to DOS, OS/2, Windows, etc.
+
+* A little history lesson about Douglas McIlroy
+- PhD in Applied Mathematics from MIT in 1959
+- Bell Labs form 1958-1997
+- head of Computing Techniques Research Department, the birthplace of Unix
+- also wrote the unix tools diff, sort, and join, among others.
+- Quote on Unix Philosophy:
+	This is the Unix philosophy: 
+	Write programs that do one thing and do it well. 
+	Write programs to work together. 
+	Write programs to handle text streams, because that is a universal interface.
+
+* Unix Philosophy
+
+* Unix Philosophy
+
+- Originated by Ken Thompson (Bell Labs, B, Go)
+- Outlines a set of core principles that guide building tools in Unix
+- Mike Gancarz (X Windows) outlines philosophy in 9 precepts:
+
+	1. Small is beautiful.
+	2. Make each program do one thing well.
+	3. Build a prototype as soon as possible.
+	4. Choose portability over efficiency.
+	5. Store data in flat text files.
+	6. Use software leverage to your advantage.
+	7. Use shell scripts to increase leverage and portability.
+	8. Avoid captive user interfaces.
+	9. Make every program a filter.
+
+* Pipes, Chains, and Redirection
+* Pipes, Chains, and Redirection
+
+*pipes*
+Pipes are used to feed the output of one program into another using the vertical bar notation (|).
+
+*chains*
+Chains are are used to string several commands together, a pipe is actually one of many chaining mechanisms. Other common mechanisms are the ampersand (&), semi-colon (;), AND (&&), OR (||), NOT (!).
+
+*redirection*
+Redirection, as it applies to the Bourne shell (bash), deals with manipulating standard I/O streams such as Standard Input (stdin), Standard Output (stdout), and Standard Error (stderr).
+
+* pipes
+* pipes
+.play code/pipes-01.sh
+
+* pipes
+.play code/pipes-02.sh
+
+* pipes
+.play code/pipes-03.sh
+
+* pipes
+.play code/pipes-04.sh
+
+* chains
+* chains
+.play code/chains-41.sh
+
+* chains
+.play code/chains-42.sh
+
+* chains
+.play code/chains-43.sh
+
+* chains
+.play code/chains-01.sh
+
+* chains
+.play code/chains-02.sh
+
+* chains
+.play code/chains-03.sh
+
+* redirection
+* redirection
+.play code/redirection-01.sh
+
+* redirection
+.play code/redirection-02.sh
+
+* redirection
+.play code/redirection-03.sh
+
+* redirection
+.play code/redirection-04.sh
+
+* redirection
+.play code/redirection-05.sh
+
+* redirection
+.play code/redirection-06.sh
+
+* redirection
+.play code/redirection-07.sh
+
+* redirection
+.play code/redirection-08.sh
+
+* redirection
+.play code/redirection-09.sh
+
+* redirection
+.play code/redirection-10.sh
+
+* Sources:
+.link http://en.wikipedia.org/wiki/Pipeline_(Unix) Pipeline (Unix)
+.link http://en.wikipedia.org/wiki/Unix_philosophy Unix Philosophy
+.link http://en.wikipedia.org/wiki/Douglas_McIlroy Douglas McIlroy
+.link http://en.wikipedia.org/wiki/Ken_Thompson Ken Thompson
+.link http://www.tecmint.com/chaining-operators-in-linux-with-practical-examples/ Chaining Operator Examples
